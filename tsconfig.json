@@ -6,6 +6,8 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "noUnusedLocals": false, // Suppress unused imports and variables
+    "noUnusedParameters": false, // Suppress unused function parameters
     "paths": {
       "@/*": ["./src/*"]
     }

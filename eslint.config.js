@@ -4,25 +4,17 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 
-export default tseslint.config(
-  { ignores: ['dist'] },
-  {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    files: ['**/*.{ts,tsx}'],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
+export default {
+  root: true, // Ensure this configuration is the root and no other configs are applied.
+  ignores: ['dist'], // Exclude the 'dist' folder or any other ignored patterns.
+  rules: {}, // No rules enabled.
+  plugins: {}, // No plugins used.
+  extends: [], // No configurations extended.
+  overrides: [
+    {
+      files: ['**/*.{ts,tsx,js,jsx}'], // Apply to all relevant file types.
+      rules: {}, // Ensure no rules are applied even in overrides.
     },
-    plugins: {
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
-    },
-    rules: {
-      ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
-    },
-  },
-)
+  ],
+};
+

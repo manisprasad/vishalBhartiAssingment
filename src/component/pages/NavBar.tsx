@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import vishalBhartiLogo from '../../assets/Vishal_Bharti_Senior_Secondary_School_1559_Logo_1.png'
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleDropdown = (index) => {
+  const toggleDropdown = (index: any) => {
     setOpenDropdown(openDropdown === index ? null : index);
   };
 
@@ -104,7 +104,7 @@ const Navbar = () => {
                   </svg>
                 </button>
                 {openDropdown === index && (
-                  <div className="absolute left-0 mt-1 w-96 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 z-50 w-72">
+                  <div className="absolute left-0 mt-1  border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 z-50 w-72">
                     <div className="flex max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white md:px-6">
                       <ul>
                       {menu.subItems.map((subItem, subIndex) => (

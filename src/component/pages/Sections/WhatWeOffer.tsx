@@ -1,5 +1,5 @@
-import React from "react";
-import { FaSchool, FaMicroscope, FaBusinessTime, FaBrush } from "react-icons/fa";
+
+import { FaSchool } from "react-icons/fa";
 
 const WhatWeOffer = () => {
   const offerings = [

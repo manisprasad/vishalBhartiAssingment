@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
     FaFacebookF, FaInstagram, FaWpforms, FaTwitter, FaPhoneAlt, FaBuilding,
     FaLaptop, FaMusic, FaBookReader, FaBus, FaUniversity, FaFileAlt, FaPen,

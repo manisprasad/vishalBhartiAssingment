@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
 
 import Footer from './Footer';
 import TestimonialsSection from './TestimonialsSection ';
 import { IoMdChatboxes } from "react-icons/io";
 import Carousel from '../Carousel';
 import WhatWeOffer from './Sections/WhatWeOffer';
-import WelcomeSection from './Sections/WelcomeSection';
+
 import Navbar from './NavBar';
 import NotificationSection from './Sections/Alert';
 import EventsSection from './Sections/EvenSection';
@@ -24,22 +23,6 @@ export interface Event{
 }
 
 const HomePage = () => {
-    const [darkMode, setDarkMode] = useState(false);
-
-    // Handle toggling dark mode
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
-
-    // Apply the dark class to the HTML element
-    useEffect(() => {
-        const root = document.documentElement;
-        if (darkMode) {
-            root.classList.add('dark');
-        } else {
-            root.classList.remove('dark');
-        }
-    }, [darkMode]);
 
  
 

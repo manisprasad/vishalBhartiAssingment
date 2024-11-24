@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaSchool, FaSnowflake, FaBrain, FaAward } from "react-icons/fa";
 
 
 const HeroSection = () => {
